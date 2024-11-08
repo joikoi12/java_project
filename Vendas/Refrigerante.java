@@ -1,4 +1,4 @@
-package vendas;
+package Vendas;
 
 import java.io.Serializable;
 

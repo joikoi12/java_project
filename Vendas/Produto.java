@@ -1,11 +1,15 @@
-package vendas;
+package Vendas;
 
 import java.io.Serializable;
 
 public abstract class Produto implements Serializable {
     private static final long serialVersionUID = 1L;
 
-
+    protected int referencia;
+    protected String nome;
+    protected double preco;
+    protected String validade;
+    
     Produto(int referencia, String nome, double preco, String validade, String tipo, String marca) {
         this.referencia = referencia;
         this.nome = nome;
@@ -14,12 +18,6 @@ public abstract class Produto implements Serializable {
         this.tipo = tipo;
         this.marca = marca;
     }
-
-
-    protected int referencia;
-    protected String nome;
-    protected double preco;
-    protected String validade;
 
 
     public String getTipo() {
@@ -74,8 +72,4 @@ public abstract class Produto implements Serializable {
     }
 
     abstract public void getDetalhes();
-
-
-
-
 }
